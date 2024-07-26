@@ -20,7 +20,7 @@
 
 - [Abrir e rodar o projeto](#abrir-e-rodar-o-projeto)
 
-- [Desenvolvedores](#desenvolvedores)
+- [Colaboradores](#colaboradores)
 
 ## Descrição do projeto 
 
