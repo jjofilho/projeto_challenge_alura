@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <section class="container">
+            
+            <div class="container__alura">
+                ALURA
+            </div>
+            
+            <div class="container__entrada">
+                <input type="text" min="1" max="1000" class="container__entrada__input">
+                <p class="container__entrada__texto__paragrafo">Apenas letras minúsculas e sem acento.  </p>
+                <div class="container__entrada__botoes">
+                    <button onclick="criptografarTexto()" class="container__botao">Criptografar</button>
+                    <button onclick="descriptografarTexto()" id="reiniciar" class="container__botao" disabled>Descriptografar</button>
+                </div>
+            </div>
+            
+            <div class="container__saida">
+                <div>
+                    <p class="container__saida__paragrafo"></p>
+                    <div>
+                    <button onclick="copiarTexto()" id="reiniciar" class="container__botao__copia__texto" disabled>Copiar Texto</button>
+                    </div>
+                </div>        
+            </div>
+
+        </section>
+    </main>
+    <footer></footer>
+    <script src="app.js" defer></script>
+</body>
+</html>

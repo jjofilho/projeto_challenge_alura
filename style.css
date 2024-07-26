@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    background-color: #D8DFE8;
+    color: #00008B;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 40px;
+}
+
+.container__alura {
+    width: 50px;
+}
+
+.container__entrada__input {
+    text-align: left;
+    border-color: none;
+    width: 680px;
+    height: 560px;
+}
