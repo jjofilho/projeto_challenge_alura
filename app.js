@@ -1,3 +1,23 @@
+let botaoCriptografar = document.getElementById('botaoCriptografar');
+let botaoDescriptografar = document.getElementById('botaoDescriptografar');
+let inputTexto = document.getElementById('inputTexto');
+let resultadoTexto = document.getElementById('resultadoTexto');
+
+function criptografarClick() {
+    let textoEntrada = inputTexto.value;
+    let textoCriptografado = criptografarTexto(textoEntrada);
+    resultadoTexto.innerText = textoCriptografado;
+}
+
+function descriptografarClick() {
+    let textoEntrada = inputTexto.value;
+    let textoDescriptografado = descriptografarTexto(textoEntrada);
+    resultadoTexto.innerText = textoDescriptografado;
+}
+
+botaoCriptografar.addEventListener('click', criptografarClick);
+botaoDescriptografar.addEventListener('click', descriptografarClick);
+
 function criptografarTexto(texto) {
     return texto
         .replace(/a/g, "ai")    
@@ -7,7 +27,7 @@ function criptografarTexto(texto) {
         .replace(/u/g, "ufat");
 }
 
-function decriptografarTexto(texto) {
+function descriptografarTexto(texto) {
     return texto
         .replace(/ai/g, "a")    
         .replace(/enter/g, "e")
@@ -15,12 +35,3 @@ function decriptografarTexto(texto) {
         .replace(/ober/g, "o")
         .replace(/ufat/g, "u");
 }
-
-let textoEntrada = "parabens pelo projeto alura one";
-let textoCriptografado = criptografarTexto(textoEntrada);
-let textoDecriptografado = decriptografarTexto(textoCriptografado);
-
-/* Testando resultados no console */
-console.log("Texto Original: " + textoEntrada);
-console.log("Texto Criptografado: " + textoCriptografado);
-console.log("Texto Decriptografado: " + textoDecriptografado);

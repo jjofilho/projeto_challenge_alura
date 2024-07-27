@@ -17,22 +17,23 @@
             </div>
             
             <div class="container__entrada">
-                <input type="text" min="1" max="1000" class="container__entrada__input">
-                <p class="container__entrada__texto__paragrafo">Apenas letras minúsculas e sem acento.  </p>
-                <div class="container__entrada__botoes">
-                    <button onclick="criptografarTexto()" class="container__botao">Criptografar</button>
-                    <button onclick="descriptografarTexto()" id="reiniciar" class="container__botao" disabled>Descriptografar</button>
+                <input type="text" id="inputTexto" min="1" max="100" class="container__entrada__texto" placeholder="Digite seu texto">
+                <p class="container__paragrafo">Apenas letras minúsculas e sem acento. </p>
+                <div class="container__botoes">
+                    <button id="botaoCriptografar">Criptografar</button>
+                    <button id="botaoDescriptografar">Descriptografar</button>
                 </div>
             </div>
             
             <div class="container__saida">
                 <div>
-                    <p class="container__saida__paragrafo"></p>
+                    <p><span id="resultadoTexto"></span></p>
                     <div>
-                    <button onclick="copiarTexto()" id="reiniciar" class="container__botao__copia__texto" disabled>Copiar Texto</button>
+                        <button id="copiarTexto" class="container__botao__copiarTexto" disabled>Copiar Texto</button>
                     </div>
                 </div>        
             </div>
+            
 
         </section>
     </main>
