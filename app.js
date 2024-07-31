@@ -1,37 +1,31 @@
-let botaoCriptografar = document.getElementById('botaoCriptografar');
-let botaoDescriptografar = document.getElementById('botaoDescriptografar');
-let inputTexto = document.getElementById('inputTexto');
-let resultadoTexto = document.getElementById('resultadoTexto');
+const textArea = document.querySelector(".textArea");
+const mensagem = document.querySelector(".mensagem");
 
-function criptografarClick() {
-    let textoEntrada = inputTexto.value;
-    let textoCriptografado = criptografarTexto(textoEntrada);
-    resultadoTexto.innerText = textoCriptografado;
+function botaoCriptografar() {
+    let textoCritografado = criptografar(textArea.value);
+    mensagem.value = textoCritografado;
+    textArea.value = "";
 }
 
-function descriptografarClick() {
-    let textoEntrada = inputTexto.value;
-    let textoDescriptografado = descriptografarTexto(textoEntrada);
-    resultadoTexto.innerText = textoDescriptografado;
+function criptografar(textoCriptografado) {
+    return textoCriptografado
+        .replaceAll(/e/g, "enter")
+        .replaceAll(/i/g, "imes")
+        .replaceAll(/a/g, "ai")
+        .replaceAll(/o/g, "ober")
+        .replaceAll(/u/g, "ufat");
 }
 
-botaoCriptografar.addEventListener('click', criptografarClick);
-botaoDescriptografar.addEventListener('click', descriptografarClick);
-
-function criptografarTexto(texto) {
-    return texto
-        .replace(/a/g, "ai")    
-        .replace(/e/g, "enter")
-        .replace(/i/g, "imes")
-        .replace(/o/g, "ober")
-        .replace(/u/g, "ufat");
+function botaoDescriptografar() {
+    let textoDescriptografado = descriptografar(textArea.value);
+    mensagem.value = textoDescriptografado;
+    textArea.value = "";
 }
-
-function descriptografarTexto(texto) {
-    return texto
-        .replace(/ai/g, "a")    
+function descriptografar(textoDescriptografado) {
+    return textoDescriptografado
         .replace(/enter/g, "e")
         .replace(/imes/g, "i")
+        .replace(/ai/g, "a") 
         .replace(/ober/g, "o")
         .replace(/ufat/g, "u");
 }
