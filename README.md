@@ -33,7 +33,7 @@ O desafio propõe a criação de um encriptador de texto permite aplicar os conh
 O aplicativo em construção contém um campo para inserção do texto a ser criptografado ou descriptografado e o resultado é exibido na tela. 
 
 
-![Descrição do Modelo do Projeto Challenge Alura - DECODIFICADOR | Programa ONE (2024).](/assets/Decodificador%20-%201%20Desktop.png)
+![Descrição do Modelo do Projeto Challenge Alura - DECODIFICADOR | Programa ONE (2024).](./assets/TelaDecodificador.png)
 </p>
 
 ## Funcionalidades

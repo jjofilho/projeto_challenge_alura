@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codificador</title>
+    <title>Projeto Codificador</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main  class="container">
-        <header></header>
+     
         <section class="logoAlura">
             <img src="./assets/logoAlura.png" alt="Logo da Alura">
         </section>
     
         <section class="container__entrada">
-            <textarea class="textArea" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
-            <div class="informacao">
-                <h6>Apenas letras minúsculas e sem acento.</h6>
+            <textarea class="textArea" cols="20" rows="10" placeholder="Digite seu texto aqui..."></textarea>
+            <div class="informacao">                
+                <div class="informacao__icone">
+                    <img src="./assets/bi_exclamation-circle-fill.png" alt="!!!">
+                </div>
+                <div class="informacao__texto">
+                    <h6>Apenas letras minúsculas e sem acento.</h6>
+                </div>                
             </div>
             <div class="botoes">
                 <button class="botaoCriptografar" onclick="botaoCriptografar()">Criptografar</button>
@@ -31,16 +36,15 @@
             </div>
             <div>
                 <h6 class="semMensagens">Nenhuma mensagem encontrada</h6>
-            </div>
             <div>
                 <p class="mensagemInformacao">Digite um texto que você deseja criptografar ou descriptografar.</p>
             </div>
-            <div class="container__saida_botao">
+            <div class="container__saida__botao">
                 <button class="botaoCopiar" disabled="True">Copiar</button>
             </div>
         </section>
+
     </main>
-    <footer></footer>
     <script src="app.js" defer></script>
 
 </body>
