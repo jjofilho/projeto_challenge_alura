@@ -66,8 +66,10 @@ Você pode [acessar o código fonte do projeto](https://github.com/jjofilho/proj
 
 # Abrir e rodar o projeto
 
-<p align="center">
-   <img src="/assets/RodandoProjetoAlura.mp4" alt="Vídeo executando o projeto decodificador">
+<p aling="center">
+   <video controls width="500">
+      <source src="/assets/RodandoProjetoAlura.mp4" type="video/mp4" />
+   </video>
 </p>
 
 ## Colaborador
