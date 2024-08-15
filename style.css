@@ -1,20 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 :root {
-    --cor-fundo: #f4f4f4;
+    --cor-fundo: #6482AD;
     --cor-principal: #007bff;
     --cor-secundaria: #6c757d;
     --cor-texto: #333;
-    --cor-botao-criar: #007bff;
-    --cor-botao-descriptografar: #3492ea;
-    --cor-botao-copiar: #17a2b8;
+    --cor-botao-criptografar: #6482AD;
+    --cor-botao-descriptografar: #7FA1C3;
+    --cor-botao-copiar-ativo: #E2DAD6;
+    --cor-botao-copiar-inativo: #E2DAD6;
+    --cor-botao-copiar-hover: #E2DAD6;
     --cor-botao-hover: #0056b3;
-    --cor-texto-botao: #fff;
-    --cor-textarea: #fff;
-    --cor-borda-textarea: #ddd;
+    --cor-texto-botao: #faf9f9;
+    --cor-textarea: #faf9f9;
+    --cor-borda-textarea: #faf9f9;
     --cor-mensagem-informacao: #6c757d;
+
+    --fonte-primaria: "Inter", sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--fonte-primaria);
     background-color: var(--cor-fundo);
     margin: 0;
 }
@@ -27,6 +33,7 @@ body {
     width: 80%;
     max-width: 800px;
     margin: 20px auto;
+    font-family: var (--fonte-primaria);
 }
 
 .logoAlura img {
@@ -47,7 +54,8 @@ body {
     box-sizing: border-box;
     font-size: 16px;
     color: var(--cor-texto);
-    font-family: Arial, sans-serif;
+    background-color: var(--cor-textarea);
+    font-family: var(--fonte-primaria);
 }
 
 .informacao {
@@ -56,12 +64,13 @@ body {
     justify-content: flex-start;
     align-items: center;
     padding: 0 0 0 20px;
+    font-family: var(--fonte-primaria);
 }
 
 .informacao__icone {
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain; 
+    background-size: contain;
 }
 
 .informacao h6 {
@@ -74,10 +83,11 @@ body {
     display: flex;
     justify-content: left;
     padding: 20px;
+    font-family: var(--fonte-primaria);
 }
 
 button {
-    background-color: var(--cor-botao-criar);
+    background-color: var(--cor-botao-criptografar);
     color: var(--cor-texto-botao);
     border: none;
     padding: 10px 20px;
@@ -86,6 +96,7 @@ button {
     margin: 0 5px;
     font-size: 16px;
     transition: background-color 0.3s ease;
+    font-family: var(--fonte-primaria);
 }
 
 button:hover {
@@ -101,16 +112,18 @@ button:hover {
 }
 
 .botaoCopiar {
-    background-color: var(--cor-botao-copiar);
+    background-color: var(--cor-botao-criptografar);
+    color: var(--cor-texto-botao);
 }
 
 .botaoCopiar:disabled {
-    background-color: #6c757d;
+    background-color: var(--cor-botao-copiar-inativo);
+    color: var(--cor-botao-descriptografar);
     cursor: not-allowed;
 }
 
 .botaoCopiar:hover {
-    background-color: #138496;
+    background-color: var(--cor-botao-hover)
 }
 
 .container__saida {
@@ -129,17 +142,20 @@ button:hover {
     box-sizing: border-box;
     font-size: 16px;
     color: var(--cor-texto);
-    font-family: Arial, sans-serif;
+    background-color: var(--cor-textarea);
+    font-family: var(--fonte-primaria);
 }
 
 .mensagemInformacao {
     color: var(--cor-mensagem-informacao);
     font-size: 14px;
     padding: 0 0 0 20px;
+    font-family: var(--fonte-primaria);
 }
 
 .semMensagens {
     color: var(--cor-secundaria);
     font-size: 16px;
     padding: 0 0 0 20px;
+    font-family: var(--fonte-primaria);
 }

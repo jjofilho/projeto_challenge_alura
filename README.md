@@ -1,13 +1,7 @@
 ![Challenge Decodificador Alura](./assets/ReadMeChallenge.png)
 
-<hr>
-<p></p>
-<p align="center">
-   <img src="https://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge" #vitrinedev/>
-</p>
-</hr>
 
-## Tópicos 
+# Tópicos 
 
 - [Descrição do projeto](#descrição-do-projeto)
 
@@ -21,9 +15,9 @@
 
 - [Abrir e rodar o projeto](#abrir-e-rodar-o-projeto)
 
-- [Desenvolvedores](#desenvolvedores)
+- [Colaborador](#Colaborador)
 
-## Descrição do projeto 
+# Descrição do projeto 
 
 <p align="justify">
 Projeto Challenge Alura DECODIFICADR DE TEXTO em desenvolvimento conclusão de fase seletiva da Formação Iniciante em Programação T7, dentro do Programa ONE | Oracle Next Generation (2024).
@@ -36,7 +30,7 @@ O aplicativo em construção contém um campo para inserção do texto a ser cri
 ![Descrição do Modelo do Projeto Challenge Alura - DECODIFICADOR | Programa ONE (2024).](./assets/TelaDecodificador.png)
 </p>
 
-## Funcionalidades
+# Funcionalidades
 
 `Funcionalidade 1:` Funcionar apenas com letras minúsculas.
 
@@ -48,30 +42,34 @@ O aplicativo em construção contém um campo para inserção do texto a ser cri
 
 `Funcionalidade EXTRA:` Contém a funcionalidade "ctrl+C" ou "copiar" o texto criptografado/descriptografado para a área de transferência.
 
-## Aplicação
+# Aplicação
 
-<p align="center">
-   <img src="https://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge" #vitrinedev/>
-</p>
+## Criptografar: 
+<p>Texto de Entrada: "projeto decodificador"</p> 
+<p>Resultado: "oberlai mufatndober"</p>
+
+## Descriptografar: 
+<p>Texto de Entrada: "proberjentertober dentercoberdimesfimescaidoberr"</p>
+<p>Resultado: "projeto decodificador"</p>
 
 ###
 
-## Ferramentas utilizadas
+# Ferramentas utilizadas
 
 [![My Skills](https://skillicons.dev/icons?i=js,html,css)](https://skillicons.dev)
 
 ###
 
-## Acesso ao projeto
+# Acesso ao projeto
 
 Você pode [acessar o código fonte do projeto](https://github.com/jjofilho/projeto_challenge_alura).
 
-## Abrir e rodar o projeto
+# Abrir e rodar o projeto
 
 <p align="center">
-   <img src="https://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge" #vitrinedev/>
+   <img src="/assets/RodandoProjetoAlura.mp4" alt="Vídeo executando o projeto decodificador">
 </p>
 
-## Colaboradores
+## Colaborador
 
 [<img src="https://avatars.githubusercontent.com/u/170963236?u=a8c7f81bbb6eba3f775a6f5f65098aace7bbef9d&v=4&size=64" width=115> <br><sub>João Oliveira</sub><br>](https://github.com/jjofilho)

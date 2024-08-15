@@ -1,4 +1,13 @@
-// Função para criptografar texto
+function inicializarConfiguracaoSite() {
+    document.getElementById('imagem-decoderalura').style.display = 'block';
+    document.querySelector('.textArea').value = '';
+    document.querySelector('.mensagem').style.display = 'none';
+    document.querySelector('.botaoCopiar').disabled = true;
+    document.querySelector('.semMensagens').style.display = 'block';
+    document.querySelector('.mensagemInformacao').style.display = 'block';
+    document.getElementById('botaoCopiar').style.display = 'none';
+}
+
 function criptografarTexto(texto) {
     return texto
         .replace(/e/g, 'enter')
@@ -8,7 +17,6 @@ function criptografarTexto(texto) {
         .replace(/u/g, 'ufat');
 }
 
-// Função para descriptografar texto
 function descriptografarTexto(texto) {
     return texto
         .replace(/enter/g, 'e')
@@ -18,12 +26,10 @@ function descriptografarTexto(texto) {
         .replace(/ufat/g, 'u');
 }
 
-// Função para validar o texto
 function validarTexto(texto) {
     return /^[a-z\s]+$/.test(texto);
 }
 
-// Função para lidar com a criptografia
 function botaoCriptografar() {
     const textoInput = document.querySelector('.textArea').value;
     if (!validarTexto(textoInput)) {
@@ -32,13 +38,15 @@ function botaoCriptografar() {
     }
     
     const resultado = criptografarTexto(textoInput);
+    document.querySelector('.mensagem').style.display = 'block';
     document.querySelector('.mensagem').value = resultado;
+    document.getElementById('imagem-decoderalura').style.display = 'none';
     document.querySelector('.semMensagens').style.display = 'none';
     document.querySelector('.mensagemInformacao').style.display = 'none';
+    document.getElementById('botaoCopiar').style.display = 'block';
     document.querySelector('.botaoCopiar').disabled = false;
 }
 
-// Função para lidar com a descriptografia
 function botaoDescriptografar() {
     const textoInput = document.querySelector('.textArea').value;
     if (!validarTexto(textoInput)) {
@@ -47,18 +55,23 @@ function botaoDescriptografar() {
     }
     
     const resultado = descriptografarTexto(textoInput);
+    document.querySelector('.mensagem').style.display = 'block';
     document.querySelector('.mensagem').value = resultado;
+    document.getElementById('imagem-decoderalura').style.display = 'none';
     document.querySelector('.semMensagens').style.display = 'none';
     document.querySelector('.mensagemInformacao').style.display = 'none';
+    document.getElementById('botaoCopiar').style.display = 'block';
     document.querySelector('.botaoCopiar').disabled = false;
 }
 
-// Função para copiar o resultado para a área de transferência
 function copiarParaAreaDeTransferencia() {
     const resultadoArea = document.querySelector('.mensagem');
     resultadoArea.select();
     document.execCommand('copy');
+    inicializarConfiguracaoSite();
+    alert('Texto copiado com sucesso!');
 }
 
-// Adiciona evento de clique ao botão de copiar
+window.onload = inicializarConfiguracaoSite();
+
 document.querySelector('.botaoCopiar').addEventListener('click', copiarParaAreaDeTransferencia);
