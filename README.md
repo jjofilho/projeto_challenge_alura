@@ -13,7 +13,7 @@
 
 - [Acesso ao projeto](#acesso-ao-projeto)
 
-- [Abrir e rodar o projeto](#abrir-e-rodar-o-projeto)
+- [Demonstração do projeto](#demonstração-do-projeto)
 
 - [Colaborador](#Colaborador)
 
@@ -64,14 +64,11 @@ O aplicativo em construção contém um campo para inserção do texto a ser cri
 
 Você pode [acessar o código fonte do projeto](https://github.com/jjofilho/projeto_challenge_alura).
 
-# Abrir e rodar o projeto
+# Demonstração do projeto
 
-<p aling="center">
-   <video controls width="500">
-      <source src="/assets/RodandoProjetoAlura.mp4" type="video/mp4" />
-   </video>
-</p>
+[Assista a uma demonstração do Projeto](./assets/RodandoProjetoAlura.gif)
 
-## Colaborador
+
+# Colaborador
 
 [<img src="https://avatars.githubusercontent.com/u/170963236?u=a8c7f81bbb6eba3f775a6f5f65098aace7bbef9d&v=4&size=64" width=115> <br><sub>João Oliveira</sub><br>](https://github.com/jjofilho)
