@@ -30,10 +30,10 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 80%;
+    width: 90%;
     max-width: 800px;
     margin: 20px auto;
-    font-family: var (--fonte-primaria);
+    font-family: var(--fonte-primaria);
 }
 
 .logoAlura img {
@@ -76,7 +76,7 @@ body {
 .informacao h6 {
     font-size: 14px;
     color: var(--cor-secundaria);
-    margin: 10px
+    margin: 10px;
 }
 
 .botoes {
@@ -84,6 +84,7 @@ body {
     justify-content: left;
     padding: 20px;
     font-family: var(--fonte-primaria);
+    flex-wrap: wrap;
 }
 
 button {
@@ -93,7 +94,7 @@ button {
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
-    margin: 0 5px;
+    margin: 5px 5px 0 0;
     font-size: 16px;
     transition: background-color 0.3s ease;
     font-family: var(--fonte-primaria);
@@ -158,4 +159,41 @@ button:hover {
     font-size: 16px;
     padding: 0 0 0 20px;
     font-family: var(--fonte-primaria);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .botoes {
+        justify-content: center;
+    }
+
+    .textArea, .mensagem {
+        height: 120px;
+    }
+
+    .container__saida__botao {
+        padding: 10px 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .textArea, .mensagem {
+        height: 100px;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .container__saida__botao {
+        padding: 5px 0;
+        text-align: center;
+    }
 }
